@@ -1,0 +1,108 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between columns */
+  padding: 2rem;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Ensure no margin */
+  background-image: url('https://i.pinimg.com/736x/b4/0e/fd/b40efdcf5f50db7c65b4927d084822bb.jpg'); 
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+}
+
+.searchCard {
+  background-color: rgba(240, 249, 255, 0.8); /* Light blue background with transparency */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+.displayCard {
+  background-color: rgba(224, 247, 250, 0.8); /* Light background with transparency */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.weatherInfo {
+  text-align: center;
+  overflow-y: auto; /* Enable vertical scrolling for weather info */
+  flex: 1; /* Allow weatherInfo to take up remaining space */
+}
+
+.weatherInfo h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.weatherEntry {
+  margin-bottom: 1rem;
+}
+
+.weatherEntry h3 {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.weatherEntry p {
+  margin: 0.3rem 0;
+}
+
+.weatherEntry hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #00aaff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0088cc; /* Darker shade on hover */
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
